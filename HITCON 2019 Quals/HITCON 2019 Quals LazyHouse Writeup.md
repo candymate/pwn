@@ -1,4 +1,4 @@
-# HITCON 2019 Quals LazyHouse Writeup
+# LazyHouse
 
 ## Description
 
@@ -23,7 +23,7 @@ There is a bug in buying house, which allows us to **buy houses with negative si
 
 Also, there is an intended bug in upgrading house, which allows us to do **32 byte heap overflow** twice.
 
-## Scenario
+## Exploit
 
 ### Money cheat
 
@@ -143,7 +143,7 @@ payload += "/bin/sh\0"+p64(target)*17*2
 buy_house(0, 0x1f8, payload)
 ```
 
-### call mprotect and run shellcode
+### Call mprotect and run shellcode
 
 Overwrite `__free_hook` to call mprotect, then run shellcode.
 
@@ -176,7 +176,7 @@ sell_house (3)
 r.interactive()
 ```
 
-### Full code
+## Full code
 
 [Link](https://github.com/candymate/pwn/blob/master/HITCON%202019%20Quals/solver.py)
 
