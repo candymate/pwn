@@ -178,5 +178,7 @@ r.interactive()
 
 ### Full code
 
-[Link]([https://github.com/candymate/pwn/blob/master/HITCON%202019%20Quals/solver.py](https://github.com/candymate/pwn/blob/master/HITCON 2019 Quals/solver.py))
+[Link](https://github.com/candymate/pwn/blob/master/HITCON%202019%20Quals/solver.py)
+
+
 
